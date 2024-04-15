@@ -1,13 +1,9 @@
-/* https://colorhunt.co/palette/1a120b3c2a21d5cea3e5e5cb */
-
 body {
   background-color: #2b9f8e;
   margin: auto;
   max-width: 900px;
   text-align: center;
   align-items: flex-start;
-  /* justify-content: center; */
-  /* align-items: flex-start; */
   font-family: "Jersey 20", sans-serif;
   font-optical-sizing: auto;
   font-weight: 00;
