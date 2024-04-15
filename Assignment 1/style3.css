@@ -1,0 +1,54 @@
+/* https://colorhunt.co/palette/1a120b3c2a21d5cea3e5e5cb */
+
+body {
+  background-color: #2b9f8e;
+  margin: auto;
+  max-width: 900px;
+  text-align: center;
+  align-items: flex-start;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  font-family: "Jersey 20", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 00;
+  font-style: normal;
+  color: #e5e5cb;
+  font-size: 1.4rem;
+}
+
+header {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+p {
+  font-size: smaller;
+  padding: 8px;
+  margin: 1px;
+  justify-content: center;
+  text-align: center;
+  max-width: 100;
+}
+
+main {
+  text-align: center;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.end {
+  text-align: center;
+}
