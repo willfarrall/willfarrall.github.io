@@ -1,71 +1,127 @@
+<!--  For this assignment I have chosen a context of music video
+
+I went with three sections <section> enclosed in a big <div> called "outer"
+1) sectionL video container
+  This section is dedicated purely to the playing video content
+
+2) Section: Video controls
+  contains all video controls and buttons
+  I went with a flexbox to style this so that all the buttons are spaced next to each other.
+  The section features a play/pause button, a repeat button, a fullscreen button, a timeline, 
+  up and down volume buttons and a mute button. All of those features were chosen based on the context of the video.
+
+3)  Section: Timeline
+This third selection allows the user to jump between minute intervals. From 0:00 to 3:00 and are all labeled accordingly.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Endless Summer Research Project</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style3.css" />
-  </head>
-  <body>
-    <header><h1>Endless Summer Research Project</h1></header>
-    
-    <main>
-     
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="outer">
+  <section class="videocontainer">
+    <video src="miac.mp4" id="my-video"></video>
+  </section>
+  
+  <section class="video-controls">
+    <button id="play-pause-btn">
       <img
-        class="image"
-        src="media/image1.png"
-        alt="demo photo"
-        width="500"
-        wi />
+        id="play-pause-img"
+        src="https://img.icons8.com/ios-glyphs/30/play--v2.png"
+        alt="Play Button"
+        width="24"
+        height="24"
+      />
+    </button>
 
-      <br>
-        <h2><b>What was the first thing you paid attention to when interacting with the experience?</b></h2>
-      <p> Upon opening the page the first thing that stood out was the unique art style and colour pallet. The light pink and blue colours layer the entire site which immediately brings you into the art style of the experience.</p></div>
-      <br>
-      <h2>Spend two minutes with the experience and create a list of each of your discrete actions.</h2>
-      <P> I opened this site on my laptop web browser using Chrome, so I first adjusted the browser size as Instructed, I then clicked clear interactive ‘start’ and ‘next’ buttons after reading some introductive text. From here I used a click and drag motion on the site to move the image around revealing more of the setting, while also rotating a wheel at the bottom of the site to ‘continue’ to the next image.</P>
-      <br>
-      <h2>What part of the experience did you spend the most time engaging with?</h2>
-      <p>The site is a relaxing experience encouraging exploration. As such most of my time was spent exploring the environments using my mouse to click and drag the scene around.</p>
-      <br>
-      <h2>What was the most common action in your two minute interaction with the experience?</h2>
-      <P>Exploration through the site environments is driven by a click-and-drag action. As it seems the site was built for mobile devices, it doesn’t take use of the keyboard or other regular computer functions. As such the click and drag was the most common action, mirroring a finger on a smartphone screen</P>
-      <br>
-      <h2>What is your impression of the intended primary goal of the interactive experience?</h2>
-      <p>I believe the primary goal was to create a calming and relaxing user experience, with an emphasis on exploration and environments. Creating a user-friendly experience to show off an artist’s work in an engaging and interactive manner.</p>
-      <br>
-      <h2>How does the interactive experience communicate this primary goal?</h2>
-      <p>The experience uses simple controls, UI, colour, and music to create a calming user experience. The experience is controlled simply by the user’s finger or simple click-and-drag controls on a mouse, allowing the user to just focus on the rest of the experience instead of having to focus on how to navigate it. A very stripped-back basic user interface is used, avoiding clutter on the screen to bring the user into the experience and not overwhelm them. Calming music and colour palettes are also key elements of the experience to bring the user into the calming nature of the environment.</p>
-      <br>
-      <h2>What is your impression of how the experience should be interacted with over time? (For how long and how many different times) </h2>
-      <p>This experience is differently short and sweet, only meant to be experienced a single time. Users may enjoy the art and the environment and choose to come back or share the experience. But it is likely just meant to be interacted with a single time</p>
-      <br>
-      <h2>How does the interactive experience communicate how it should be interacted with over time?</h2>
-      <P>While the site does have a progress bar that helps you navigate through the site, this is reset when reloading the site suggesting that your progress isn’t meant to carry over multiple visits. It also has a conclusion screen when finishing the experience linking you to another site or to share the site, giving it a conclusive end.</P>
-      <br>
-      <h2>What other media forms (digital or otherwise) does the experience reference?</h2>
-      <p>The art style of the site embraces synth-wave music and art style. Common in media about the neon-soaked beaches of 1980’s Miami seen in such films/TV shows as ‘Scarface’ and ‘Miami Vice’</p>
-      <br>
-      <h2>What does this reference/s communicate to you about how you should act when engaging with your research experience?</h2>
-      <p>I think the familiar art style encourages the user to engage with the controls and explore the environments, if the user is presented with an art style they are familiar with from other mediums it can be more inviting for them to engage with the experience.</p>
-      <br>
-      <h2>What does this reference/s communicate to you about how you should feel when engaging with your research experience?</h2>
-      <p>The use of this art style is deliberate as the synth wave music and art style are commonly associated with more euphoric emotions. While also invoking a sense of familiarity when entering the site as if it’s something we’ve seen before, which fits with the narrative of the memory of a summer day which the experience leads into. </p>
-      <br>
-      <h2>What is the most frustrating part of the interaction to you and what makes that part frustrating?</h2>
-      <p>The experience is very much designed for mobile devices, forcing the user to adjust their browser size to mimic a mobile screen. This pulled me out of the experience as only a small area of my screen was taken up by the experience, with my desktop background occupying the rest.</p>
-      <br>
-      <h2>What is the most satisfying part of the interaction to you and what makes that part satisfying?</h2>
-      <p>The very simple and coherent user interface. Having a very basic and non-invasive interface assists greatly in the immersion of the experience, being able to focus on the art and the experience rather than trying to navigate complicated menus and controls</p>
-      <br>
-    </main>
+    <button id="repeat">
+      <img
+        id="repeat"
+        src="https://img.icons8.com/ios-glyphs/30/repeat.png"
+        alt="Mute Unmute Button"
+        width="24"
+        height="24"
+      />
+    </button>
 
-      <div class="end" div> 
-          <P> Will Farrall S3785867</P></div>
-  </body>
+    <button id="fullscreen-button">
+      <img
+        id="fullscreen-button"
+        src="https://img.icons8.com/ios-glyphs/30/full-screen--v1.png"
+        alt="Fullscreen Button"
+        width="24"
+        height="24"
+      />
+    </button>
+
+    <div class="progress-bar">
+      <span id="progress-bar-fill"></span>
+    </div>
+
+    <button id="volume-down-button">
+      <img
+        id="volume-down-button"
+        src="https://img.icons8.com/ios-glyphs/30/low-volume.png"
+        alt="Volume Down Button"
+        width="24"
+        height="24"
+      />
+    </button>
+
+    <button id="volume-up-button">
+      <img
+        id="volume-up-button"
+        src="https://img.icons8.com/ios-glyphs/30/high-volume--v1.png"
+        alt="Volume Up Button"
+        width="24"
+        height="24"
+      />
+    </button>
+
+    <button id="mute-unmute-button">
+      <img
+        id="mute-unmute-button"
+        src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
+        alt="Mute Unmute Button"
+        width="24"
+        height="24"
+      />
+    </button>
+
+
+  </section>
+<section class="timeline">
+  <button id="part-1">0:00</button>
+  <button id="part-2">1:00</button>
+  <button id="part-3">2:00</button>
+  <button id="part-4">3:00</button>
+</section>
+</div>
+
+<footer>
+  <a href="https://icons8.com/icon/TlSnjmNzYgKT/play">Play</a>
+  <a href="https://icons8.com/icon/pSwquXkxwLD8/pause">Pause</a> 
+  <a href="https://icons8.com/icon/91481/repeat">Repeat</a> 
+  <a href="https://icons8.com/icon/69155/full-screen">Fullscreen</a> 
+  <a href="https://icons8.com/icon/91635/no-audio">Mute</a>
+  <a href="https://icons8.com/icon/91634/low-volume">Volume Decrease</a>
+  &
+  <a href="https://icons8.com/icon/59734/audio">Volume Increase</a>
+  icons by <a href="https://icons8.com">Icons8</a>
+</footer>
+
+</body>
 </html>
