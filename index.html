@@ -1,127 +1,51 @@
-<!--  For this assignment I have chosen a context of music video
-
-I went with three sections <section> enclosed in a big <div> called "outer"
-1) sectionL video container
-  This section is dedicated purely to the playing video content
-
-2) Section: Video controls
-  contains all video controls and buttons
-  I went with a flexbox to style this so that all the buttons are spaced next to each other.
-  The section features a play/pause button, a repeat button, a fullscreen button, a timeline, 
-  up and down volume buttons and a mute button. All of those features were chosen based on the context of the video.
-
-3)  Section: Timeline
-This third selection allows the user to jump between minute intervals. From 0:00 to 3:00 and are all labeled accordingly.
--->
+<!-- For this assignment, I have created an Interactive Photo Gallery based entirely around the 'Click' input.
+The page splits into two primary sections and functions. The first is a 6x6 grid gallery, and the second is a popup image wrapper.
+Style and functionality were considered, with the primary focus on making sure the CSS style always encourages the use of the 'Click' input.
+While also making sure the entire functionality of the entire experience is focused on the same input -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Player</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Space+Grotesk&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <title>Interactive Photo Gallery</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="outer">
-  <section class="videocontainer">
-    <video id="my-video"> <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4" type="video/mp4" /> Your browser does not support the video tag. </video>
-  </section>
-  
-  <section class="video-controls">
-    <button id="play-pause-btn">
-      <img
-        id="play-pause-img"
-        src="https://img.icons8.com/ios-glyphs/30/play--v2.png"
-        alt="Play Button"
-        width="24"
-        height="24"
-      />
-    </button>
-
-    <button id="repeat">
-      <img
-        id="repeat"
-        src="https://img.icons8.com/ios-glyphs/30/repeat.png"
-        alt="Mute Unmute Button"
-        width="24"
-        height="24"
-      />
-    </button>
-
-    <button id="fullscreen-button">
-      <img
-        id="fullscreen-button"
-        src="https://img.icons8.com/ios-glyphs/30/full-screen--v1.png"
-        alt="Fullscreen Button"
-        width="24"
-        height="24"
-      />
-    </button>
-
-    <div class="progress-bar">
-      <span id="progress-bar-fill"></span>
-    </div>
-
-    <button id="volume-down-button">
-      <img
-        id="volume-down-button"
-        src="https://img.icons8.com/ios-glyphs/30/low-volume.png"
-        alt="Volume Down Button"
-        width="24"
-        height="24"
-      />
-    </button>
-
-    <button id="volume-up-button">
-      <img
-        id="volume-up-button"
-        src="https://img.icons8.com/ios-glyphs/30/high-volume--v1.png"
-        alt="Volume Up Button"
-        width="24"
-        height="24"
-      />
-    </button>
-
-    <button id="mute-unmute-button">
-      <img
-        id="mute-unmute-button"
-        src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
-        alt="Mute Unmute Button"
-        width="24"
-        height="24"
-      />
-    </button>
-
-
-  </section>
-<section class="timeline">
-  <button id="part-1">0:00</button>
-  <button id="part-2">1:00</button>
-  <button id="part-3">2:00</button>
-  <button id="part-4">3:00</button>
-</section>
+    <div class="heading">
+    <heading> INTERACTIVE PHOTO GALLERY</heading>
 </div>
 
-<footer>
-  <a href="https://icons8.com/icon/TlSnjmNzYgKT/play">Play</a>
-  <a href="https://icons8.com/icon/pSwquXkxwLD8/pause">Pause</a> 
-  <a href="https://icons8.com/icon/91481/repeat">Repeat</a> 
-  <a href="https://icons8.com/icon/69155/full-screen">Fullscreen</a> 
-  <a href="https://icons8.com/icon/91635/no-audio">Mute</a>
-  <a href="https://icons8.com/icon/91634/low-volume">Volume Decrease</a>
-  &
-  <a href="https://icons8.com/icon/59734/audio">Volume Increase</a>
-  icons by <a href="https://icons8.com">Icons8</a>
-</footer>
+<!-- The Image Wrapper is the pop-up display that fills the site when an image is clicked. This is one of the two primary foundations of the site, with it
+being the primary source of user feedback for the 'Click'. Good click-based interaction is based on effective user-based feedback and as such I wanted 
+to make sure when the user clicks one of the images, a strong sense of feedback occurs. A larger expanded image takes up the screen is highly effective
+in this regard. It also features a close button, which when clicked closes the popup. I wanted to add this to give the user a further sense of
+input and control. -->
+
+    <div class="imgWrapper" id="wrapper">
+        <img src="TOBIAHS.png" id="expandImg"/>
+        <span>&times;</span>
+    </div>
+
+<!-- All the images we're sourced from my workplace, with all photos used with permission from the artist Juan Castro 
+https://www.instagram.com/juancastro.au/  -->
+
+    <div class="img-gallery">
+            <img src="images/img1.jpg">
+            <img src="images/img2.jpg">
+            <img src="images/img3.jpg">
+            <img src="images/img4.jpg">
+            <img src="images/img5.jpg">
+            <img src="images/img6.jpg">
+        </div>
+    </div>
+
+<footer> All images sourced and used with permission from artist <a href="https://www.instagram.com/juancastro.au/">Juan Castro</a> <link></footer>
 
 </body>
 </html>
